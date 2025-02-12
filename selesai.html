@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Terakhir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #b1a5bc;
+            color: #333;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('profile terakhir.jpg') no-repeat center 90%/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 80%;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.3);
+            letter-spacing: 2px;
+            line-height: 1.5;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: white;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .text-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .text-box h2 {
+            font-size: 1.8rem;
+            color: #8b5e34;
+        }
+
+        .text-box p {
+            font-size: 1rem;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Grid Foto */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Masih betah sampai sini? Hehehe... <br> Tenang, ini bagian terakhir dari website saya</h1>
+        </div>
+        <div class="scroll-down">⬇</div>
+    </header>
+
+    <div class="container">
+        <div class="text-box">
+            <h2>Ini beberapa momen bersama teman-teman saya!!</h2>
+        </div>
+
+        <!-- Galeri Foto -->
+        <div class="gallery">
+            <img src="1 terakhir.jpg" alt="Dokumentasi 1">
+            <img src="2terakhir.jpg" alt="Dokumentasi 2">
+            <img src="3terakhir.jpg" alt="Dokumentasi 3">
+            <img src="4terakhir.jpg" alt="Dokumentasi 4">
+            <img src="5terakhir.jpg" alt="Dokumentasi 5">
+            <img src="10terakhir.jpg" alt="Dokumentasi 10">
+            <img src="7terakhir.jpg" alt="Dokumentasi 7">
+            <img src="8terakhir.jpg" alt="Dokumentasi 8">
+            <img src="9terakhir.jpg" alt="Dokumentasi 9">
+        </div>
+    </div>
+
+     <!-- Tombol Kembali -->
+     <div class="button-container">
+        <a href="Satu.html" class="back-button">Kembali ke Halaman Utama</a>
+    </div>
+</div>
+
+<style>
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .back-button {
+        display: inline-block;
+        background: #8b5e34;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background 0.3s ease-in-out;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-button:hover {
+        background: #6d4425;
+    }
+</style>
+
+</body>
+</html>
